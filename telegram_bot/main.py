@@ -2,11 +2,12 @@ import telebot
 from telebot import types
 from working_with_db import *
 from helpers import *
+from token import token
 
 # в переменной bot указан уникальный для каждого бота токен, 
 # его можно получить у @BotFather и использовать свой, тогда можно 
 # создать и оформить другого бота 
-bot = telebot.TeleBot('7190978054:AAHxXOc4d3hxsthKZbAX4JaZlBX3m7dcdUs')
+bot = telebot.TeleBot(token)
 login = ''
 home_name = ''
 service = ''
