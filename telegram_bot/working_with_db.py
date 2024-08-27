@@ -76,9 +76,7 @@ def create_user_db(login):
                electricity text,
                water text,
                gas text,
-               heating text,
-               trash text,
-               capital text)''')
+               heating text)''')
 
     conn.commit()
     cursor.close()
