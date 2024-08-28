@@ -52,13 +52,13 @@ def buttons(callback):
     # получение номера телефона от пользователя для регистрации
     if callback.data == 'registration':
         bot.send_message(callback.message.chat.id, 
-                     '''введите номер телефона, например:\n (79591234567 или 7 959 123 45 67)''')
+                     '''введите номер телефона, пример:\n (79591234567 или 7 959 123 45 67)''')
         bot.register_next_step_handler(callback.message, registration)
         
     # получение номера телефона от пользователя для входа в аккаунт 
     elif callback.data == 'check_in':
         bot.send_message(callback.message.chat.id, 
-                     '''введите номер телефона, например:\n (79591234567 или 7 959 123 45 67)''')
+                     '''введите номер телефона, пример:\n (79591234567 или 7 959 123 45 67)''')
         bot.register_next_step_handler(callback.message, check_in)
     
     # обработка кнопки выбора дома из списка существующих
